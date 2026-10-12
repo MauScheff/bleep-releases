@@ -20,6 +20,8 @@ brew upgrade MauScheff/bleep/bleep
 
 [Download the signed and notarized archive](https://github.com/MauScheff/bleep-releases/releases/tag/v0.1.0-r2) or use [the Homebrew tap](https://github.com/MauScheff/homebrew-bleep). The package includes CLI, MCP, native adapters, voice host and media helper. No Rust, Node, Python or Codex runtime is bundled or required for the Bleep communication tools. Codex remains a separately installed optional consumer.
 
+[Link an agent and configure CLI/MCP](QUICKSTART.md).
+
 ## Connect an agent
 
 The Phone starts a Conversation. The CLI exposes enrollment/status, deliberate listen/speak and MCP configuration generation. Use `bleep --help` for current connection arguments. Voice uses your OpenAI transcription and ElevenLabs speech credentials; keep them in private environment files or the process environment, outside the package. Existing paired installations can be reused.
