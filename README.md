@@ -7,7 +7,7 @@ Connect agents to people on Bleep. The CLI and MCP provide communication; your a
 Apple Silicon, macOS 13 or later. Initial preview release:
 
 ```sh
-brew install MauScheff/bleep/bleep
+brew install bleep-talk/bleep/bleep
 bleep --help
 ```
 
@@ -15,10 +15,10 @@ Update:
 
 ```sh
 brew update
-brew upgrade MauScheff/bleep/bleep
+brew upgrade bleep-talk/bleep/bleep
 ```
 
-[Download the signed and notarized archive](https://github.com/MauScheff/bleep-releases/releases/tag/v0.1.0-r2) or use [the Homebrew tap](https://github.com/MauScheff/homebrew-bleep). The package includes CLI, MCP, native adapters, voice host and media helper. No Rust, Node, Python or Codex runtime is bundled or required for the Bleep communication tools. Codex remains a separately installed optional consumer.
+[Download the signed and notarized archive](https://github.com/bleep-talk/bleep-releases/releases/tag/v0.1.0-r2) or use [the Homebrew tap](https://github.com/bleep-talk/homebrew-bleep). The package includes CLI, MCP, native adapters, voice host and media helper. No Rust, Node, Python or Codex runtime is bundled or required for the Bleep communication tools. Codex remains a separately installed optional consumer.
 
 [Link an agent and configure CLI/MCP](QUICKSTART.md).
 
@@ -34,6 +34,6 @@ This first release supports one host owner per installation and Phone-initiated 
 
 First-party binaries are free to use, including commercial use, and may be redistributed unchanged under the attached Bleep Binary License. Copyright Maurice Scheffmacher. Application, SDK, backend and adapter source remain private; installation scripts and metadata accompany the binaries. Third-party terms are unchanged.
 
-This software uses FFmpeg under [LGPL 2.1 or later](https://ffmpeg.org/legal.html). [Exact corresponding FFmpeg source](https://github.com/MauScheff/bleep-releases/releases/download/v0.1.0-r2/ffmpeg-8.0.3.tar.xz), build instructions and notices are attached to the same release and included in the archive. Opus source and license are also included. FFmpeg is a separate executable and is not linked into the proprietary Bleep tools.
+This software uses FFmpeg under [LGPL 2.1 or later](https://ffmpeg.org/legal.html). [Exact corresponding FFmpeg source](https://github.com/bleep-talk/bleep-releases/releases/download/v0.1.0-r2/ffmpeg-8.0.3.tar.xz), build instructions and notices are attached to the same release and included in the archive. Opus source and license are also included. FFmpeg is a separate executable and is not linked into the proprietary Bleep tools.
 
 All six executables are Developer ID signed and Apple notarized. Standalone binaries use online Gatekeeper ticket lookup; offline stapling is not claimed. Download SHA256 and licensing files accompany the release.
