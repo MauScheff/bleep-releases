@@ -5,12 +5,12 @@ Initial preview for Apple Silicon, macOS 13 or later. Bleep provides communicati
 ## Install and update
 
 ```sh
-brew install MauScheff/bleep/bleep
+brew install bleep-talk/bleep/bleep
 BLEEP="$(brew --prefix)/bin/bleep"
 "$BLEEP" --help
 ```
 
-Update with `brew update` and `brew upgrade MauScheff/bleep/bleep`. Close the current host first, then restart it. Keep pairing, provider files and host configuration outside the Cellar. An older local installation can shadow `bleep`; use the stable absolute command above.
+Update with `brew update` and `brew upgrade bleep-talk/bleep/bleep`. Close the current host first, then restart it. Keep pairing, provider files and host configuration outside the Cellar. An older local installation can shadow `bleep`; use the stable absolute command above.
 
 ## Link an agent
 
