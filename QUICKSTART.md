@@ -74,3 +74,18 @@ The Pi teacher is a separately configured reference client that consumes the sam
 ## Distribution
 
 First-party binaries are free to use, including commercial use, and can be redistributed unchanged under the release's Bleep Binary License. Application/SDK/backend/adapter source remains private. Third-party rights are unchanged. The signed/notarized download includes notices and exact corresponding FFmpeg/Opus sources.
+
+## Move from the old personal tap
+
+Close the running Bleep host. Keep pairing and provider files outside the Cellar.
+The repository transfer preserves old download redirects, but it does not rename
+an installed local tap. Use these verified steps:
+
+```sh
+brew uninstall MauScheff/bleep/bleep
+brew untap MauScheff/bleep
+brew install bleep-talk/bleep/bleep
+```
+
+Restart the host with the same external state and stable Homebrew command.
+The uninstall removes package files; it preserves external pairing and provider files.
